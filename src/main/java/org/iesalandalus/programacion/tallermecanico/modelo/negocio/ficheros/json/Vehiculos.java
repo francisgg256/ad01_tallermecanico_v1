@@ -22,7 +22,7 @@ public class Vehiculos implements IVehiculos {
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
     }
 
-    public static Vehiculos getInstancia() {
+    static Vehiculos getInstancia() {
         if (instancia == null) {
             instancia = new Vehiculos();
         }

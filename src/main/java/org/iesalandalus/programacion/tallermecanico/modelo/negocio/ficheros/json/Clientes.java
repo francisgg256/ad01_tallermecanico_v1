@@ -23,7 +23,7 @@ public class Clientes implements IClientes {
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
     }
 
-    public static Clientes getInstancia() {
+    static Clientes getInstancia() {
         if (instancia == null) {
             instancia = new Clientes();
         }
